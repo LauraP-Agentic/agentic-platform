@@ -1,0 +1,15 @@
+name: CI - Agentic Platform
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build Docker images
+        run: docker compose build
+      - name: Validate compose
+        run: docker compose config
