@@ -2,6 +2,7 @@
 # Agentic AI Platform - Prototype
 
 > **Prototype of an innovative agentic AI platform | Python & LLMs | Scalable architecture designed for high-concurrency (principles for 15M+ scale) | Educational / Portfolio Project**
+Prototype of an innovative agentic AI platform | Python, Groq LLM & Scalable Architecture | Educational project demonstrating principles for 15M+ scale
 
 This is a portfolio prototype demonstrating how to design, build, and test a scalable agentic AI platform using modern Python stack. Built as an educational project to showcase engineering skills relevant for large-scale AI systems.
 
@@ -25,6 +26,9 @@ This project was built to demonstrate practical skills for:
 - **Infra:** Docker & Docker Compose
 - **Testing:** Locust - load testing for high-concurrency
 - **Concepts:** Agentic AI, Gateway-Worker pattern, Backpressure handling, Scalability
+- **LLM:** Groq API - llama-3.3-70b-versatile 
+- **Cache**: Redis for rate limiting
+- **Observability**: Prometheus + structlog
 
 ### 📁 Repository Structure
 ```
@@ -52,6 +56,15 @@ locust -f locustfile.py
 - Stateless services designed for horizontal scaling
 - Docker Compose demonstrates how to scale workers: `docker-compose up --scale worker=3`
 - Architecture principles align with systems serving 15M+ users: decoupling, async processing, containerization
+
+ ### Mapped to THRYVE Job - 15M Platform
+- Agentic platform -> gateway/worker structure
+- Python & LLMs -> Groq integration
+- Scalable -> Docker, async, rate limiting
+
+### Scalability: Prototype vs 15M Production
+Covered: stateless, async, docker-compose scale worker=3, Locust
+Roadmap to 15M: Kubernetes + HPA, Kafka for backpressure, Redis Cluster, Prometheus + Grafana
 
 ### 🎯 Purpose
 This repo is part of my portfolio for **Artificial Intelligence Engineer** roles, focusing on building **scalable, production-minded agentic AI platforms**. It showcases code organization, DevOps awareness, and performance testing mindset.
