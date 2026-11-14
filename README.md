@@ -2,7 +2,7 @@
 # Agentic AI Platform - Prototype
 
 > **Prototype of an innovative agentic AI platform | Python & LLMs | Scalable architecture designed for high-concurrency (principles for 15M+ scale) | Educational / Portfolio Project**
-Prototype of an innovative agentic AI platform | Python, Groq LLM & Scalable Architecture | Educational project demonstrating principles for 15M+ scale
+
 
 This is a portfolio prototype demonstrating how to design, build, and test a scalable agentic AI platform using modern Python stack. Built as an educational project to showcase engineering skills relevant for large-scale AI systems.
 
